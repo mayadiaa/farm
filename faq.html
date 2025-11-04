@@ -13,7 +13,8 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
@@ -27,14 +28,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-        <!-- bootstrap icon -->
+
+    <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-            <!-- animation -->
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-      <!-- Topbar Start -->
+    <!-- Topbar Start -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5 py-3 align-items-center">
             <div class="col-lg-3">
@@ -66,8 +70,6 @@
         </div>
     </div>
     <!-- Topbar End -->
-
-
   <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3 px-lg-5 greenbgwithouthover">
         <a href="index.html" class="navbar-brand d-flex w-25 h-25">
@@ -87,7 +89,7 @@
                 <a href="blog.html" class="nav-item nav-link">Blogs</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                 <a href="news.html" class="nav-item nav-link">News</a>
-                <a href="faq.html" class="nav-item nav-link">Faq</a>
+                <a href="faq.html" class="nav-item nav-link active">Faq</a>
 
                 <div class="lang-switch d-flex d-lg-none mt-3">
                     <a href="#" class="text-white me-3"><i class="bi bi-globe2"></i> English</a>
@@ -103,51 +105,125 @@
     </nav>
     <!-- Navbar End -->
 
+       <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="brownColor">Frequently Asked Questions</h1>
+            <p class="lead">
+                Answers to common questions about agricultural investment, palm farms, irrigation, and export readiness.
+                If you don’t find what you’re looking for, reach out — we’re here to help.
+            </p>
+        </div>
+    </section>
+    
+    <!-- ===== FAQ CONTENT ===== -->
+    <section>
+        <div class="container faq-wrap" >
+            <!-- Sidebar -->
+            <aside class="faq-side " data-animate="animate__fadeInLeft"> 
+                <h3 class="brownColor">Need more help?</h3>
+                <p class="mini">
+                    Our team can assist with project selection, feasibility, irrigation design, and farm management inquiries.
+                </p>
+                <div class="faq-cta">
+                    <a class="btn1 primary " href="./contact.html">Contact us</a>
+                    <a class="btn1 light " href="./blog.html">Read our blogs</a>
+                </div>
+            </aside>
 
-    <!-- Hero Start -->
-    <!-- <div class="container-fluid bg-primary py-5 bg-hero mb-5">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-white mb-md-4">Blog</h1>
-                    <p >our expertise has been rooted in agricultural investment and sustainable farm management.</p>
-                  <a href="./contact.html" class="btn btn-primary py-md-3 px-md-5 me-3 contactbtn">Contact Us</a>
+            <!-- Main -->
+            <div>
+                <div class="faq-controls"data-animate="animate__fadeInRight" >
+                    <div class="search searchstyle">
+                        <span class="sfx">🔎</span>
+                        <input id="faqSearch" type="search" placeholder="Search in questions..." />
+                    </div>
+
+                    <div class="tools">
+                        <button id="expandAll" class="btn1 light " type="button">Expand all</button>
+                        <button id="collapseAll" class="btn1 light " type="button">Collapse all</button>
+                    </div>
+                </div>
+
+                <div class="faq" data-animate="animate__fadeInRight">
+                    <!-- Investment / Management -->
+                    <details data-tags="investment,management" open>
+                        <summary class="greenColor"><span class="dot"></span> Do you manage palm investments end-to-end?</summary>
+                        <div class="content">
+                            Yes. We cover feasibility, land & soil assessment, irrigation systems, planting, technical programs,
+                            harvesting, grading, packing, and export readiness — with transparent reporting throughout.
+                        </div>
+                    </details>
+
+                    <!-- Yield / Payback -->
+                    <details data-tags="palm,investment">
+                        <summary class="greenColor"><span class="dot"></span> When do palms start yielding and what’s the typical payback?</summary>
+                        <div class="content">
+                            Light yield usually begins in year 3 (variety/conditions dependent). Full production is commonly
+                            reached around year 7. Typical payback in standard scenarios is ~4–5 years.
+                        </div>
+                    </details>
+
+                    <!-- Irrigation -->
+                    <details data-tags="irrigation,operations">
+                        <summary class="greenColor"><span class="dot"></span> Do you design and install irrigation systems?</summary>
+                        <div class="content">
+                            Absolutely. We design efficient, water-saving networks with reliable infrastructure, routine checks,
+                            and performance tuning to match crop needs and site conditions.
+                        </div>
+                    </details>
+
+                    <!-- Land & Soil -->
+                    <details data-tags="land,soil,feasibility">
+                        <summary class="greenColor"><span class="dot"></span> Can you help with land acquisition and soil analysis?</summary>
+                        <div class="content">
+                            Yes. We conduct soil testing, leveling, and site preparation, and advise on land selection to ensure
+                            long-term productivity and sustainability.
+                        </div>
+                    </details>
+
+                    <!-- Technical Programs -->
+                    <details data-tags="organic,programs">
+                        <summary class="greenColor"><span class="dot"></span> Do you provide technical supervision and farming programs?</summary>
+                        <div class="content">
+                            We set irrigation, nutrition, and IPM schedules with routine field visits and reporting. Organic
+                            programs and compliance can be supported where required.
+                        </div>
+                    </details>
+
+                    <!-- Export -->
+                    <details data-tags="exports,quality">
+                        <summary class="greenColor"><span class="dot"></span> Can you support export readiness and certifications?</summary>
+                        <div class="content">
+                            Yes. We assist with quality compliance, certification guidance, and buyer connections for local,
+                            regional, and export markets.
+                        </div>
+                    </details>
+
+                    <!-- Returns & Reporting -->
+                    <details data-tags="investment,reports">
+                        <summary class="greenColor"><span class="dot"></span> How do returns and reporting work?</summary>
+                        <div class="content">
+                            Returns depend on variety, market price, and agronomy conditions. We provide clear management
+                            reports and data-driven dashboards on agreed intervals so you can track progress and performance.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Filter chips -->
+                <div class="faq-controls controls" data-animate="animate__fadeInRight">
+                    <span class="chip" data-tag="investment">Investment</span>
+                    <span class="chip" data-tag="palm">Palm</span>
+                    <span class="chip" data-tag="irrigation">Irrigation</span>
+                    <span class="chip" data-tag="land">Land</span>
+                    <span class="chip" data-tag="organic">Organic</span>
+                    <span class="chip" data-tag="exports">Exports</span>
+                    <span class="chip" data-tag="reports">Reports</span>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Hero End -->
-<!-- ============ Blog Section (Palm Farming Article) ============ -->
-<section class="blog-single">
-  <div class="container" data-animate="animate__fadeInLeft">
-    <div class="blog-hero">
-      <h1 class="blog-title">The Future of Sustainable Palm Farming in Egypt</h1>
-      <p class="blog-meta">Oct 28, 2025</p>
-    </div>
+    </section>
 
-    <figure class="cover">
-      <img src="./webImg/bg.jpg" class="blogImg" alt="Palm Farming in Egypt">
-    </figure>
-
-    <article class="content">
-      <p>Palm farming has become one of Egypt’s most promising agricultural investments, combining traditional cultivation with modern sustainability practices. In recent years, the global demand for high-quality dates — especially premium varieties like Medjool — has been growing rapidly, creating new opportunities for investors and farmers alike.</p>
-
-      <p>At our farms, each palm is treated as a long-term asset. Through advanced irrigation systems, soil analysis, and expert supervision, we ensure every tree reaches its full productive potential.</p>
-
-      <h3>1) Smart Water Management</h3>
-      <p>Efficient irrigation systems reduce water waste and improve crop health in Egypt’s desert conditions.</p>
-
-      <h3>2) Quality Over Quantity</h3>
-      <p>From plantation to packaging, every step follows strict standards to maintain export-grade quality.</p>
-
-      <h3>3) Long-Term Returns</h3>
-      <p>Palm trees start yielding within the third year, with full production achieved by the seventh — providing stable and increasing returns for decades.</p>
-
-      <p>Investing in sustainable agriculture today means securing food and financial stability for the future.</p>
-    </article>
-  </div>
-</section>
-   
     <!-- Footer Start -->
     <div class="container-fluid bg-footer bg-primary text-white foodiv" >
         <div class="container">
@@ -245,8 +321,8 @@
 
     <!-- Footer End -->
 
- <!-- wp icon -->
-    <a href="https://wa.me/201070518877"  class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <!-- wp icon -->
+    <a href="https://wa.me/201070518877" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="bi bi-whatsapp"></i>
     </a>
     <!-- Back to Top -->

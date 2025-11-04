@@ -52,12 +52,12 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    padding: 30px 15px;
+    padding: 12px 15px;
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
     text-transform: uppercase;
-    transition: .5s;
+    transition: .7s;
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
@@ -67,56 +67,70 @@
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     background: var(--secondary);
-    
+
 }
+
 /* ===== Navbar Language Icons Styling ===== */
 .navbar .d-flex a {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
 .navbar .d-flex a i {
-  font-size: 1.1rem;
-  margin-right: 6px;
-  color: #8b5e34; 
-  transition: color 0.3s ease;
+    font-size: 1.1rem;
+    margin-right: 6px;
+    color: #8b5e34;
+    transition: color 0.3s ease;
 }
 
 .navbar .d-flex a:hover {
-  color: #e9f6ef; 
+    color: #e9f6ef;
 }
 
 .navbar .d-flex a:hover i {
-  color: #2e8b57; 
+    color: #2e8b57;
 }
 
-.navbar .d-flex a + a {
-  margin-left: 14px;
+.navbar .d-flex a+a {
+    margin-left: 14px;
+}
+
+.navlogo {
+    margin: -4rem;
+    height: 9rem;
+    margin-left: 1rem;
 }
 
 @media (max-width: 992px) {
-  .navbar .d-flex {
-    margin-top: 10px;
-    justify-content: center;
-  }
-  
+    .navbar .d-flex {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link {
         padding: 10px;
     }
-     .bgContent {
+
+    .bgContent {
         margin-top: 0 !important;
-       
+
+    }
+
+}
+@media (min-width: 991.98px) {
+    .navbar-collapse.navvv {
+        
+        margin-left: -18rem !important;
     }
 }
-
 @media (max-width: 576px) {
     .carousel-caption h4 {
         font-size: 18px;
@@ -124,35 +138,83 @@
         font-size: 0.7rem;
     }
 
+    .chooseImg {
+        height: 15rem !important;
+    }
+
     .carousel-caption h1 {
         font-size: 30px;
         font-weight: 600 !important;
-        
+
     }
+
+    .navbar-nav {
+        padding-left: 6rem;
+    }
+
+    .navbar .navbar-brand.d-lg-none img {
+        height: 8rem !important;
+    }
+
     .display-1 {
-    font-size: 1rem;}
+        font-size: 1rem;
+    }
+
     .bgContent {
         margin-top: 0 !important;
         margin-right: 0 !important;
     }
 
-}
+    .bannerDiv {
+        height: 366px !important;
+    }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-}
+    .hero {
+        padding: 2rem 0 !important;
+    }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
-}
+    .footerdiv {
+        padding: 2rem 0 !important;
+    }
 
-.bg-hero {
-    background: url(../webImg/background.png) top right no-repeat;
-    background-size: cover;
-    background-position: 0%;
+    .navbar .lang-switch {
+
+        right: 1rem !important;
+        bottom: 0.2rem !important;
+    }
+
+    .blog-single {
+        padding: 0px !important;
+
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+    .backbtn {
+        width: 11.7rem;
+        margin: 1rem 0;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .bg-hero {
+        background: url(../webImg/background.png) top right no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+
+    .navbar-nav {
+        align-items: flex-start !important;
+    }
+
+
 }
 
 @media (min-width: 991.98px) {
@@ -161,7 +223,26 @@
         margin-top: -90px;
         z-index: 1;
     }
-    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .header_h3 {
+        font-size: 1.7rem;
+    }
+
+    .bgContent {
+        margin-left: 2rem;
+    }
+
+    .greenbgwithouthover {
+        padding: 2rem;
+    }
+
+    .ServiceDiv {
+        background-color: red;
+    }
+
 }
 
 .bg-vegetable {
@@ -439,7 +520,7 @@
 }
 
 .projects-alt {
-    padding: 72px 0;
+    padding: 50px 0;
 
 }
 
@@ -574,7 +655,7 @@
 }
 
 .testi {
-    padding: 72px 0;
+    padding: 30px 0;
     background: linear-gradient(180deg, #ffffff, #f7f8f7);
 }
 
@@ -736,10 +817,7 @@
 }
 
 /* ====== VISION & MISSION SECTION ====== */
-.vision-mission {
-    padding: 80px 0;
 
-}
 
 .vision-mission .container {
     max-width: 1140px;
@@ -784,6 +862,20 @@
     .vm-grid {
         grid-template-columns: 1fr;
     }
+
+    .greenbgwithouthover {
+        padding: 2rem;
+    }
+      .ceoImg img {
+        width: 100% !important;
+        height: 0 !important;
+        height: 50% !important;
+        border: none !important;
+
+    }
+    .footdiv{
+    padding: 0 8% !important;
+}
 }
 
 /* ====== Card Styling ====== */
@@ -877,11 +969,15 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+.ceoImg {
+    /* height: 40rem !important; */
+}
 @media (max-width:576px) {
     .svc-steps {
         grid-template-columns: 1fr;
     }
+
+  
 }
 
 /* connector line on desktop */
@@ -990,6 +1086,77 @@
     transition: ease all 500ms;
     border: none;
 }
+
+/* contact icn */
+/* ===== Contact section tune (no class names changed) ===== */
+
+/* كروت الشمال/اليمين تبقى ناعمة ونظيفة */
+.container-fluid1 .bg-primary.h-100.p-5,
+.container-fluid1 .bg-secondary.h-100.p-5 {
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .06);
+}
+
+/* مدخلات الفرم */
+.contactInput1 {
+    height: 52px !important;
+
+}
+
+/* خلي الـtextarea مريح في الكتابة */
+.container-fluid1 textarea.form-control {
+    min-height: 120px;
+
+}
+
+/* أيقونات معلومات التواصل */
+.contactform1 {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+}
+
+/* مسافات/وضوح النصوص في كارت معلومات التواصل */
+.bg-secondary .ps-3 h5 {
+    margin-bottom: 2px;
+}
+
+.bg-secondary .ps-3 span {
+    opacity: .95;
+}
+
+/* على الشاشات الصغيرة: خلي حقول الاسم/الإيميل تبقى تحت بعض */
+.container-fluid1 .bg-primary.h-100.p-5 form .row.g-3>.col-6 {
+    width: 100%;
+}
+
+/* من أول التابلت وطالع: رجّعهم جنب بعض 50% - 50% */
+@media (min-width: 768px) {
+    .container-fluid1 .bg-primary.h-100.p-5 form .row.g-3>.col-6 {
+        width: 50%;
+    }
+}
+
+/* تنعيم البادينج والمسافات على الموبايل */
+@media (max-width: 576px) {
+
+    .container-fluid1 .bg-primary.h-100.p-5,
+    .container-fluid1 .bg-secondary.h-100.p-5 {
+        padding: 20px !important;
+    }
+
+    .container-fluid1 .row.g-0 {
+        gap: 16px;
+        /* مسافة لطيفة بين العمودين لما يبقوا تحت بعض */
+    }
+}
+
+/* زر الإرسال يستمر بعرض كامل ونفس الستايل */
+.container-fluid1 .btn.btn-secondary.w-100 {
+
+    font-weight: 700;
+}
+
 
 /* single blog */
 .container {
@@ -1271,58 +1438,60 @@
     justify-content: center;
     margin-top: 2rem;
 }
+
 /* wp icn */
 .whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  left: 25px; 
-  background-color: #25D366;
-  color: #fff;
-  font-size: 26px;
-  line-height: 55px;
-  text-align: center;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-  z-index: 9999;
-  transition: all 0.3s ease;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 26px;
+    line-height: 55px;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: all 0.3s ease;
 }
 
 .whatsapp-float:hover {
-  background-color: #20ba5a;
-  transform: scale(1.1);
-  color: #fff;
+    background-color: #20ba5a;
+    transform: scale(1.1);
+    color: #fff;
 }
 
 .whatsapp-float i {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .whatsapp-float::after {
-  content: attr(title);
-  position: absolute;
-  bottom: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0,0,0,0.75);
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
+    content: attr(title);
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
 }
 
 .whatsapp-float:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
+
 /* investment  */
 
 .OurPartner {
-    padding: 50px 0;
+    padding: 20px 0;
     background: #fff;
     text-align: center;
     overflow: hidden;
@@ -1331,7 +1500,7 @@
 .PartnerH3 {
     font-size: 28px;
     margin-bottom: 30px;
-    color:#083427!important;
+    color: #083427 !important;
 }
 
 .parner {
@@ -1369,166 +1538,670 @@
         transform: translateX(-50%);
     }
 }
+
 /* faq */
-.faq-section{
-  max-width: 820px;
-  margin: 56px auto;
-  padding: 0 16px;
-}
-.faq-head{ text-align:center; margin-bottom: 18px; }
-.faq-head h2{
-  margin:0;
-  font-weight: 800;
-  font-size: clamp(24px,4vw,32px);
-}
-.faq-head .sub{
-  margin:6px 0 0;
-  font-weight: 600;
-  font-size: .95rem;
+.faq-section {
+    max-width: 820px;
+    margin: 26px auto;
+    padding: 0 16px;
 }
 
-.faq-list{ display:grid; gap:12px; }
-.faq-item{
-  background:#fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,.04);
-  overflow: hidden;
+.faq-head {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.faq-head h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: clamp(24px, 4vw, 32px);
+}
+
+.faq-head .sub {
+    margin: 6px 0 0;
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 12px;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .04);
+    overflow: hidden;
 }
 
 /* Header button */
-.faq-toggle{
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  padding:18px 20px;
-  background:#fff;
-  border:0;
-  cursor:pointer;
-  text-align:left;
+.faq-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
 }
-.faq-q{
-  color:#222;
-  font-weight:700;
-  font-size:1rem;
+
+.faq-q {
+    color: #222;
+    font-weight: 700;
+    font-size: 1rem;
 }
-.faq-icon{
-  position:relative;
-  width:24px; height:24px;
-  border-radius:8px;
-  box-shadow: inset 0 0 0 2px var(--green-600);
+
+.faq-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 2px var(--green-600);
 }
+
 .faq-icon::before,
-.faq-icon::after{
-  content:"";
-  position:absolute;
-  background: var(--green-600);
-  width:14px; height:2px;
-  top:50%; left:50%;
-  transform: translate(-50%,-50%);
-  transition: .2s ease;
+.faq-icon::after {
+    content: "";
+    position: absolute;
+    background: var(--green-600);
+    width: 14px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease;
 }
-.faq-icon::after{
-  transform: translate(-50%,-50%) rotate(90deg); /* vertical bar => plus */
+
+.faq-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    /* vertical bar => plus */
 }
 
 /* Panel */
-.faq-panel{
-  padding: 0 20px 0;
-  color:#936133;
-  line-height:1.7;
-  max-height:0;
-  overflow:hidden;
-  transition:max-height .35s ease, padding .35s ease;
-  border-top:1px solid var(--border);
+.faq-panel {
+    padding: 0 20px 0;
+    color: #936133;
+    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease, padding .35s ease;
+    border-top: 1px solid var(--border);
 }
 
 /* Expanded state */
-.faq-toggle[aria-expanded="true"] + .faq-panel{
-  padding:16px 20px 18px;
-  max-height:260px; /* enough for 3–4 lines; increase if needed */
+.faq-toggle[aria-expanded="true"]+.faq-panel {
+    padding: 16px 20px 18px;
+    max-height: 260px;
+    /* enough for 3–4 lines; increase if needed */
 }
-.faq-toggle[aria-expanded="true"] .faq-icon::after{
-  transform: translate(-50%,-50%) rotate(0deg); /* turn into minus */
+
+.faq-toggle[aria-expanded="true"] .faq-icon::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* turn into minus */
 }
-.faq-toggle:focus-visible{
-  outline: 3px solid rgba(46,139,87,.35);
-  outline-offset: 3px;
+
+.faq-toggle:focus-visible {
+    outline: 3px solid rgba(46, 139, 87, .35);
+    outline-offset: 3px;
 }
 
 /* Hover hint */
-.faq-toggle:hover .faq-q{ color: var(--green) }
+.faq-toggle:hover .faq-q {
+    color: var(--green)
+}
 
 
 
 /* single investment */
 .text-brown {
-  color: #8b5e34;
+    color: #8b5e34;
 }
 
 .investment-details ul li {
-  margin-bottom: 8px;
-  font-size: 1rem;
-  color: #2f3e33;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #2f3e33;
 }
 
 .investment-details ul li strong {
-  color: #0f3b2f;
+    color: #0f3b2f;
 }
 
 .btn-success {
-  background-color: #0f3b2f;
-  border: none;
+    background-color: #0f3b2f;
+    border: none;
 }
 
 .btn-success:hover {
-  background-color: #236144;
+    background-color: #236144;
 }
 
 .btn-outline-secondary {
-  color: #8b5e34;
-  border-color: #8b5e34;
+    color: #8b5e34;
+    border-color: #8b5e34;
 }
 
 .btn-outline-secondary:hover {
-  background-color: #8b5e34;
-  color: #fff;
+    background-color: #8b5e34;
+    color: #fff;
 }
-.investImg{
+
+.investImg {
     height: 29rem;
 }
-.factsdiv{
-    width: 60px !important; 
+
+.factsdiv {
+    width: 60px !important;
     height: 60px !important;
 }
-.bannerDiv{
+
+.bannerDiv {
     height: 300px;
 }
-.featureDiv{
-    width: 60px; height: 60px;
+
+.featureDiv {
+    width: 60px;
+    height: 60px;
 }
-.newDiv{
+
+.newDiv {
     max-width: 500px;
 }
-.newcontent{
+
+.newcontent {
     background: #083427
 }
-.BlogDiv{
+
+.BlogDiv {
     max-width: 500px;
 }
-.imgblog{
+
+.imgblog {
     width: 75px;
 }
-.contactDiv{
+
+.contactDiv {
     max-width: 500px;
 }
-.contactInput{
+
+.contactInput {
     height: 55px;
 }
-.contactform{
-    width: 60px; height: 60px;
+
+.contactform {
+    width: 60px;
+    height: 60px;
 }
-.Explore{
-font-weight: 600;}
+
+.Explore {
+    font-weight: 600;
+}
+
+/* ========= Language Switch ========= */
+
+.navbar .lang-switch {
+    gap: 12px;
+    position: absolute;
+    right: 4rem;
+
+}
+
+.navbar .lang-switch a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.navbar .lang-switch a:hover {
+    color: #8b5e34 !important;
+    transition: ease all 600ms;
+}
+
+
+@media (min-width: 992px) {
+    .navbar>.lang-switch {
+        display: flex !important;
+    }
+
+    .navbar-collapse .lang-switch {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar>.lang-switch {
+        display: none !important;
+    }
+
+    .navbar-collapse .lang-switch {
+        display: flex !important;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+}
+
+.navbar .lang-switch i {
+    font-size: 1rem;
+    opacity: .95;
+    color: #8b5e34;
+}
+
+.pre-animate {
+    opacity: 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.navvv {
+    margin-left: -19rem;
+
+}
+
+
+
+.ceo {
+    margin-top: -1.8rem !important;
+}
+
+.footerdiv {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* faq */
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(180deg, #f7faff, transparent);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 125px 40px;
+}
+
+.hero h1 {
+    margin: .2rem 0 1rem;
+    font-size: clamp(28px, 4.8vw, 46px);
+    line-height: 1.05;
+}
+
+.hero .lead {
+    max-width: 760px;
+    color: #4a5568
+}
+
+.breadcrumb {
+    font-size: .9rem;
+    color: #6b7280;
+    margin-top: 8px
+}
+
+.breadcrumb a {
+    color: var(--secondary);
+    text-decoration: none
+}
+
+/* ===== FAQ LAYOUT ===== */
+.faq-wrap {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 980px) {
+    .faq-wrap {
+        grid-template-columns: 1fr
+    }
+}
+
+/* Sidebar card */
+.faq-side {
+    background: #fff;
+    border: 1px solid #e9edf3;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .06);
+    padding: 31px;
+}
+
+.faq-side h3 {
+    margin: 0 0 10px;
+}
+
+.faq-side .mini {
+    color: #667
+}
+
+.faq-cta {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #dfe6f4;
+    text-decoration: none;
+    font-weight: 800
+}
+
+.btn1.primary {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+    width: 9.5rem;
+    text-align: center;
+}
+
+.btn1.primary:hover {
+    background-color: #fff;
+    border: 1px solid #936133;
+    transition: ease all 600ms;
+    color: #936133;
+}
+
+.btn1.light {
+    background: #fff;
+    color: var(--secondary)
+}
+
+.btn1.light:hover {
+    background-color: #936133;
+    color: white;
+    transition: all ease 600ms;
+}
+
+/* Controls */
+.faq-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 14px
+}
+
+.faq-controls .chip {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #936133;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #e5edff;
+    cursor: pointer;
+}
+
+.faq-controls .chip:hover {
+    background-color: #fff;
+    border: 1px solid #936133;
+    color: #936133;
+    transition: all ease 600ms;
+}
+
+.faq-controls .chip.active {
+    background: #ffe7ec;
+    border-color: #ffd1db;
+    color: #8a0f2a
+}
+
+.faq-controls .tools {
+    margin-left: auto;
+    display: flex;
+    gap: 8px
+}
+
+/* Accordion */
+.faq {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.faq details {
+    border-top: 1px solid var(--border);
+    background: #fff
+}
+
+.faq details:first-child {
+    border-top: 0
+}
+
+.faq summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none
+}
+
+.faq summary .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--secondary);
+}
+
+.faq .content {
+    padding: 0 20px 18px;
+    color: #936133
+}
+
+.faq details[open] summary {
+    color: var(--active)
+}
+
+.faq details[open] summary .dot {
+    background: var(--active)
+}
+
+/* Search bar (optional look) */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e9edf3;
+    border-radius: 12px;
+    padding: 8px 10px;
+    background: #fff;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: .98rem;
+    color: #253;
+}
+
+.search .sfx {
+    font-weight: 800;
+    color: #667
+}
+
+.searchstyle {
+    flex: 1 1 auto;
+    max-width: 520px;
+}
+
+.controls {
+    margin-top: 14px
+}
+
+/* ===============================
+   Navbar Logo: Desktop + Mobile
+   (بدون تغيير أي أسماء كلاسات)
+   =============================== */
+
+/* لوجو الموبايل: نفس <a class="navbar-brand d-flex d-lg-none"> اللي عندك */
+.navbar .navbar-brand.d-lg-none img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+/* إظهار/إخفاء المناسب */
+@media (min-width: 992px) {
+
+    /* على الديسكتوب: اخفي نسخة الموبايل */
+    .navbar .navbar-brand.d-lg-none {
+        display: none !important;
+    }
+
+    /* أظهر لوجو الديسكتوب .navlogo مع ضبط المقاس والمارجن */
+    .navlogo {
+        display: block !important;
+        height: 72px;
+        width: auto;
+        margin: -10px 0 -10px 12px;
+        /* تقدر تزبط الأرقام لو حبيت */
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    /* على الموبايل: اخفي لوجو الديسكتوب وخلّي لوجو الموبايل بس */
+    .navlogo {
+        display: none !important;
+    }
+
+    /* خلّي زرار المينيو ييجي على اليمين واللوجو على الشمال */
+    .navbar {
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    /* يزقّه لليمين */
+}
+
+/* تحسين صغير للروابط أثناء الـhover/active (زي ما هو عندك) */
+.navbar-dark .navbar-nav .nav-link {
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .7s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background: var(--secondary);
+}
+
+/* اللغات (من غير تغيير الكلاسات) */
+.navbar .d-flex a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: .95rem;
+    transition: color .3s ease;
+}
+
+.navbar .d-flex a i {
+    font-size: 1.1rem;
+    margin-right: 6px;
+    color: #8b5e34;
+    transition: color .3s ease;
+}
+
+.navbar .d-flex a:hover {
+    color: #e9f6ef;
+}
+
+.navbar .d-flex a:hover i {
+    color: #2e8b57;
+}
+
+.imglogo {
+    height: 3rem;
+}
+/* ===============================
+   NAVBAR: Mobile/Desktop fixes (no class names changed)
+   ضيفي المقطع ده في آخر ملف الCSS عندك
+   =============================== */
+
+/* حجم اللوجو ثابت وما يزودش ارتفاع الناف */
+.imglogo{
+  height: 44px;      /* للموبايل */
+  width: auto;
+  display: block;
+}
+@media (min-width: 992px){
+  .imglogo{ height: 64px; } /* للديسكتوب */
+}
+
+/* إصلاحات الموبايل */
+@media (max-width: 991.98px){
+
+  /* اللينكات ما يكونش ليها padding-left كبيرة */
+  .navbar-nav{ padding-left: 0 !important; }
+
+  /* إلغاء المارجن السلبي اللي بيكسر ترتيب الموبايل */
+  .navvv{ margin-left: 0 !important; }
+
+  /* الخلفية جوه القايمة المنسدلة */
+  .navbar-collapse{
+    background: var(--primary);
+    width: 100%;
+    z-index: 1040;               /* فوق المحتوى */
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  /* اللينكات تبقى بلوك مريحة للمس */
+  .navbar-dark .navbar-nav .nav-link{
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  /* اللوجو على الشمال والزرار على اليمين */
+  .navbar{ align-items: center; }
+  .navbar-brand{ margin-right: auto; }   /* يزق اللوجو للشمال */
+  .navbar-toggler{ margin-left: auto; }  /* يزق الزرار لليمين */
+}
+
+/* تحسين بسيط في الديسكتوب: منع تمدد/تزاحم */
+@media (min-width: 992px){
+  .navbar-collapse.navvv{ margin-left: 0; } /* منع -19rem القديمة */
+}
+
+/*fooooter*/
+.footer-logo{
+  
+}
+@media (max-width: 791.98px){
+.footer-logo img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+}
+    
