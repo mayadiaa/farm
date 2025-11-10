@@ -128,9 +128,14 @@
 @media (min-width: 991.98px) {
     .navbar-collapse.navvv {
         
-        margin-left: -18rem !important;
+        margin-left: -18rem ;
+    }  
+     .navbar-collapse.navvv [dir=rtl]{
+        
+        margin-left: 0 ;
     }
 }
+
 @media (max-width: 576px) {
     .carousel-caption h4 {
         font-size: 18px;
