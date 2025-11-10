@@ -1088,35 +1088,25 @@
 }
 
 /* contact icn */
-/* ===== Contact section tune (no class names changed) ===== */
-
-/* كروت الشمال/اليمين تبقى ناعمة ونظيفة */
 .container-fluid1 .bg-primary.h-100.p-5,
 .container-fluid1 .bg-secondary.h-100.p-5 {
 
     box-shadow: 0 10px 24px rgba(0, 0, 0, .06);
 }
-
-/* مدخلات الفرم */
 .contactInput1 {
     height: 52px !important;
 
 }
 
-/* خلي الـtextarea مريح في الكتابة */
 .container-fluid1 textarea.form-control {
     min-height: 120px;
 
 }
-
-/* أيقونات معلومات التواصل */
 .contactform1 {
     width: 56px;
     height: 56px;
     min-width: 56px;
 }
-
-/* مسافات/وضوح النصوص في كارت معلومات التواصل */
 .bg-secondary .ps-3 h5 {
     margin-bottom: 2px;
 }
@@ -1124,20 +1114,14 @@
 .bg-secondary .ps-3 span {
     opacity: .95;
 }
-
-/* على الشاشات الصغيرة: خلي حقول الاسم/الإيميل تبقى تحت بعض */
 .container-fluid1 .bg-primary.h-100.p-5 form .row.g-3>.col-6 {
     width: 100%;
 }
-
-/* من أول التابلت وطالع: رجّعهم جنب بعض 50% - 50% */
 @media (min-width: 768px) {
     .container-fluid1 .bg-primary.h-100.p-5 form .row.g-3>.col-6 {
         width: 50%;
     }
 }
-
-/* تنعيم البادينج والمسافات على الموبايل */
 @media (max-width: 576px) {
 
     .container-fluid1 .bg-primary.h-100.p-5,
@@ -1147,17 +1131,12 @@
 
     .container-fluid1 .row.g-0 {
         gap: 16px;
-        /* مسافة لطيفة بين العمودين لما يبقوا تحت بعض */
     }
 }
-
-/* زر الإرسال يستمر بعرض كامل ونفس الستايل */
 .container-fluid1 .btn.btn-secondary.w-100 {
 
     font-weight: 700;
 }
-
-
 /* single blog */
 .container {
     max-width: 1140px;
@@ -1619,7 +1598,6 @@
 
 .faq-icon::after {
     transform: translate(-50%, -50%) rotate(90deg);
-    /* vertical bar => plus */
 }
 
 /* Panel */
@@ -1637,7 +1615,6 @@
 .faq-toggle[aria-expanded="true"]+.faq-panel {
     padding: 16px 20px 18px;
     max-height: 260px;
-    /* enough for 3–4 lines; increase if needed */
 }
 
 .faq-toggle[aria-expanded="true"] .faq-icon::after {
@@ -1654,24 +1631,18 @@
 .faq-toggle:hover .faq-q {
     color: var(--green)
 }
-
-
-
 /* single investment */
 .text-brown {
     color: #8b5e34;
 }
-
 .investment-details ul li {
     margin-bottom: 8px;
     font-size: 1rem;
     color: #2f3e33;
 }
-
 .investment-details ul li strong {
     color: #0f3b2f;
 }
-
 .btn-success {
     background-color: #0f3b2f;
     border: none;
@@ -1807,9 +1778,6 @@
     margin-left: -19rem;
 
 }
-
-
-
 .ceo {
     margin-top: -1.8rem !important;
 }
@@ -2047,42 +2015,28 @@
 
 /* ===============================
    Navbar Logo: Desktop + Mobile
-   (بدون تغيير أي أسماء كلاسات)
    =============================== */
-
-/* لوجو الموبايل: نفس <a class="navbar-brand d-flex d-lg-none"> اللي عندك */
 .navbar .navbar-brand.d-lg-none img {
     height: 44px;
     width: auto;
     display: block;
 }
-
-/* إظهار/إخفاء المناسب */
 @media (min-width: 992px) {
-
-    /* على الديسكتوب: اخفي نسخة الموبايل */
     .navbar .navbar-brand.d-lg-none {
         display: none !important;
     }
-
-    /* أظهر لوجو الديسكتوب .navlogo مع ضبط المقاس والمارجن */
     .navlogo {
         display: block !important;
         height: 72px;
         width: auto;
         margin: -10px 0 -10px 12px;
-        /* تقدر تزبط الأرقام لو حبيت */
     }
 }
 
 @media (max-width: 991.98px) {
-
-    /* على الموبايل: اخفي لوجو الديسكتوب وخلّي لوجو الموبايل بس */
     .navlogo {
         display: none !important;
     }
-
-    /* خلّي زرار المينيو ييجي على اليمين واللوجو على الشمال */
     .navbar {
         align-items: center;
     }
@@ -2090,11 +2044,7 @@
     .navbar-toggler {
         margin-left: auto;
     }
-
-    /* يزقّه لليمين */
 }
-
-/* تحسين صغير للروابط أثناء الـhover/active (زي ما هو عندك) */
 .navbar-dark .navbar-nav .nav-link {
     padding: 12px 15px;
     font-size: 16px;
@@ -2112,8 +2062,6 @@
 .navbar-dark .navbar-nav .nav-link.active {
     background: var(--secondary);
 }
-
-/* اللغات (من غير تغيير الكلاسات) */
 .navbar .d-flex a {
     display: flex;
     align-items: center;
@@ -2142,55 +2090,38 @@
 .imglogo {
     height: 3rem;
 }
-/* ===============================
-   NAVBAR: Mobile/Desktop fixes (no class names changed)
-   ضيفي المقطع ده في آخر ملف الCSS عندك
-   =============================== */
-
-/* حجم اللوجو ثابت وما يزودش ارتفاع الناف */
 .imglogo{
-  height: 44px;      /* للموبايل */
+  height: 44px;      /* For Mobile */
   width: auto;
   display: block;
 }
 @media (min-width: 992px){
-  .imglogo{ height: 64px; } /* للديسكتوب */
+  .imglogo{ height: 64px; } /* For desktop */
 }
-
-/* إصلاحات الموبايل */
 @media (max-width: 991.98px){
-
-  /* اللينكات ما يكونش ليها padding-left كبيرة */
   .navbar-nav{ padding-left: 0 !important; }
-
-  /* إلغاء المارجن السلبي اللي بيكسر ترتيب الموبايل */
   .navvv{ margin-left: 0 !important; }
-
-  /* الخلفية جوه القايمة المنسدلة */
   .navbar-collapse{
     background: var(--primary);
     width: 100%;
-    z-index: 1040;               /* فوق المحتوى */
+    z-index: 1040;               
     max-height: calc(100vh - 70px);
     overflow-y: auto;
   }
 
-  /* اللينكات تبقى بلوك مريحة للمس */
   .navbar-dark .navbar-nav .nav-link{
     display: block;
     width: 100%;
     padding: 12px 18px;
   }
-
-  /* اللوجو على الشمال والزرار على اليمين */
   .navbar{ align-items: center; }
-  .navbar-brand{ margin-right: auto; }   /* يزق اللوجو للشمال */
-  .navbar-toggler{ margin-left: auto; }  /* يزق الزرار لليمين */
+  .navbar-brand{ margin-right: auto; } 
+  .navbar-toggler{ margin-left: auto; }  
 }
 
-/* تحسين بسيط في الديسكتوب: منع تمدد/تزاحم */
+
 @media (min-width: 992px){
-  .navbar-collapse.navvv{ margin-left: 0; } /* منع -19rem القديمة */
+  .navbar-collapse.navvv{ margin-left: 0; } 
 }
 
 /*fooooter*/
