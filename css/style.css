@@ -126,12 +126,10 @@
 
 }
 @media (min-width: 991.98px) {
-    .navbar-collapse.navvv {
-        
+    .navbar-collapse.navvv {       
         margin-left: -18rem ;
     }  
-     .navbar-collapse.navvv [dir=rtl]{
-        
+     .navbar-collapse.navvv [dir=rtl]{       
         margin-left: 0 ;
     }
 }
@@ -1121,6 +1119,10 @@
 }
 .container-fluid1 .bg-primary.h-100.p-5 form .row.g-3>.col-6 {
     width: 100%;
+}
+.contact1{
+    display: flex;
+    justify-content: center;
 }
 @media (min-width: 768px) {
     .container-fluid1 .bg-primary.h-100.p-5 form .row.g-3>.col-6 {
@@ -2140,4 +2142,9 @@
 }
 
 }
-    
+/* .gettouchDiv {
+gap: 1rem !important;
+} */
+[dir="rtl"] .gettouchDiv {
+  gap: 1rem !important;
+}
