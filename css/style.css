@@ -2163,3 +2163,14 @@ gap: 1rem !important;
     margin-top: -1rem;
 }
 }
+[dir="rtl"] .gapIcon {
+  gap: 0.5rem !important;
+}
+/* @media screen and (min-width:800px) and (max-width:900) { */
+   /* [dir="rtl"] .gettouch_gap{
+            gap: 6rem;
+    }
+ [dir="rtl"]   .popularproject{
+        margin-top: 1rem;
+    } */
+/* } */
