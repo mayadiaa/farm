@@ -2174,3 +2174,247 @@ gap: 1rem !important;
         margin-top: 1rem;
     } */
 /* } */
+/* new css */
+/* NEWS LIST DESIGN */
+.news-list{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.news-item{
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.news-media{
+  position: relative;
+  display: block;
+  height: 100%;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.news-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform .35s ease;
+}
+
+.news-item:hover .news-media img{
+  transform: scale(1.08);
+}
+
+.news-badge{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(12, 62, 51, .92); /* قريب من أخضر الهيدر */
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: .3px;
+}
+
+.news-body{
+  padding: 22px 22px 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-title{
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+
+.news-title a{
+  color: #0c3e33;
+  text-decoration: none;
+}
+
+.news-title a:hover{
+  text-decoration: underline;
+}
+
+.news-excerpt{
+  margin: 0 0 14px;
+  color: #555;
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-meta{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.news-meta i{
+  margin-inline-end: 6px;
+}
+
+.news-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.news-share{
+  display: flex;
+  gap: 10px;
+}
+
+.share-btn{
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f5f4;
+  color: #0c3e33;
+  border: 1px solid rgba(12,62,51,.15);
+  transition: all .25s ease;
+  text-decoration: none;
+}
+
+.share-btn:hover{
+  background: #0c3e33;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Mobile tweaks */
+@media (max-width: 991px){
+  .news-media{ min-height: 220px; }
+  .news-body{ padding: 18px; }
+  .news-title{ font-size: 20px; }
+}
+.newsImages{
+   height: 21rem;
+
+}
+.newbtn{
+    border: none;
+    background-color: #936133;
+}
+.newbtn:hover{
+    background-color: #083427;
+    color: white;
+}
+.newIcn{
+    background-color: #936133;
+    color: white;
+}
+.newtitle{
+    color:#936133 !important ;
+}
+/* investment */
+.projects-alt__grid--five{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+/* 3 cards in first row, 2 in second row */
+.projects-alt__grid--five .proj-card--new{
+  grid-column: span 4;
+}
+
+.projects-alt__grid--five .proj-card--new:nth-child(4),
+.projects-alt__grid--five .proj-card--new:nth-child(5){
+  grid-column: span 6;
+}
+
+.proj-card--new{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.07);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  height: 100%;
+}
+
+.proj-card--new:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,.10);
+  border-color: rgba(12,62,51,.20);
+}
+
+.proj-card--new .icon{
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12,62,51,.08);
+  color: #0c3e33;
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.proj-card--new.is-featured{
+  border-bottom: 4px solid #0c3e33;
+}
+
+.proj-card--new .proj-title{
+  font-weight: 800;
+  color: #0c3e33;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.proj-card--new .proj-desc{
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.proj-card--new .proj-link{
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: #1b7b52;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.proj-card--new .proj-link:hover{
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 991px){
+  .projects-alt__grid--five .proj-card--new{
+    grid-column: span 6 !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px){
+  .projects-alt__grid--five .proj-card--new{
+    grid-column: span 12 !important;
+  }
+}
+/* wp popup */
