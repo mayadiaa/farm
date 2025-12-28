@@ -59,7 +59,12 @@
     text-transform: uppercase;
     transition: .7s;
 }
+@media screen and (min-width: 1000px) and (max-width: 1030px) {
+    .navbar-dark .navbar-nav .nav-link{
+            font-size: 10px !important;
+    }
 
+}
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 20px 15px;
 }
@@ -2128,7 +2133,7 @@
 
 
 @media (min-width: 992px){
-  .navbar-collapse.navvv{ margin-left: 0; } 
+  .navbar-collapse.navvv{ margin-left: -16rem; } 
 }
 
 /*fooooter*/
