@@ -445,7 +445,7 @@
 }
 
 .fontsize {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .greenbg {
@@ -2256,7 +2256,6 @@ gap: 1rem !important;
   color: #555;
   line-height: 1.7;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
