@@ -255,5 +255,30 @@ document.querySelectorAll('.faq-toggle').forEach((btn)=>{
     }, 800);
   });
 
+// single blog carsoul
+  new Swiper(".relatedSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".relatedSwiper .swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".rel-next",
+      prevEl: ".rel-prev"
+    },
+    breakpoints: {
+      0:   { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 }
+    }
+  });
+
+// news carosoul
 
 
